@@ -53,6 +53,22 @@ namespace linq
 
             List<string> descend = (names.OrderByDescending(name => name).ToList());
             descend.ToList().ForEach(name => Console.WriteLine(name));
+            Console.WriteLine("");
+
+
+            // Build a collection of these numbers sorted in ascending order
+            List<int> numbersList = new List<int>()
+{
+    15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+};
+            List<int> countingUp = (numbersList.OrderBy(num => num).ToList());
+            countingUp.ToList().ForEach(num => Console.WriteLine(num));
+            Console.WriteLine("");
+            Console.WriteLine("Aggregate Operations");
+            Console.WriteLine("");
+
+
+
 
 
         }
